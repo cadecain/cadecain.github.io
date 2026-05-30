@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; URL=https://cadecain.eth.xyz/">
-    <link rel="canonical" href="https://cadecain.eth.xyz/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Links</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* The Header/Banner Image */
+        .header-banner {
+            width: 100%;
+            height: 200px; /* Adjust height if you want it taller or shorter */
+            background-image: url('https://maroon-fast-dolphin-938.mypinata.cloud/ipfs/bafybeieoycvpzvpm5d3ratvcuchqiswaf5v5o4txs5m22zyhkaoor2gnve'); /* Your banner image file */
+            background-size: cover;
+            background-position: center;
+            background-color: #111111; /* Fallback color while image loads */
+        }
+
+        .profile-container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            padding: 0 20px 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* This moves the profile pic up to overlap the header like Twitter */
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #000000; /* Black border to cleanly cut into the banner */
+            margin-top: -60px; /* Pulls it up by half its height */
+            margin-bottom: 15px;
+            background-color: #000;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin: 0 0 8px 0;
+            font-weight: 600;
+        }
+
+        p {
+            color: #888888;
+            font-size: 0.9rem;
+            margin: 0 0 30px 0;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-card {
+            background: #111111;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 8px;
+            border: 1px solid #222222;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .link-card:hover {
+            background: #222222;
+            border-color: #444444;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting... If you are not redirected, <a href="https://cadecain.eth.xyz/">click here</a>.</p>
+
+    <div class="header-banner"></div>
+
+    <div class="profile-container">
+        <img class="profile-pic" src="https://maroon-fast-dolphin-938.mypinata.cloud/ipfs/bafkreid5pvme3qwvxxxpfiip4nkh2rm7dzmfdynrrr264gsmkbbtha7cum" alt="Profile Picture">
+        
+        <h1>@cadecain.eth</h1>
+        <p>Trader of traditional and digital assets.</p>
+
+        <div class="links-container">
+            <a href="mailto:cade@cadecain.com" class="link-card">Email Me</a>
+            <a href=""https://x.com/0xcadey" target="_blank" class="link-card">Twitter / X</a>
+            <a href="https://opensea.io/cadecain" target="_blank" class="link-card">OpenSea</a>
+            <a href="http://lens.xyz/cadecain.eth" target="_blank" class="link-card">Lens Protocol</a>
+            <a href="https://farcaster.xyz/cadecain.eth" target="_blank" class="link-card">Farcaster</a>
+            <a href=""https://iris.to/cade/cadecain.com" target="_blank" class="link-card">Nostr</a>
+        </div>
+    </div>
+
 </body>
 </html>
