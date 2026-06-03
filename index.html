@@ -33,8 +33,9 @@
             text-align: center;
             max-width: 400px;
             width: 100%;
-            padding: 0 20px 40px 20px;
+            padding: 0 20px 20px 20px;
             box-sizing: border-box;
+            flex-grow: 1; /* Pushes the footer to the bottom if content is short */
         }
 
         /* Profile pic overlap */
@@ -92,6 +93,26 @@
             font-size: 0.85rem;
             line-height: 1.8;
             font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        /* Footer styling for the flag */
+        .footer-flag {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px; /* Space beneath the flag at the edge of the screen */
+        }
+
+        .flag-img {
+            width: 40px; /* Adjust size if needed */
+            height: auto;
+            opacity: 0.8; /* Makes it blend a bit smoother with the dark theme */
+            transition: opacity 0.2s ease;
+        }
+
+        .flag-img:hover {
+            opacity: 1;
         }
     </style>
 </head>
@@ -110,11 +131,14 @@
             <a href="https://opensea.io/cadecain" target="_blank" class="link-card">OpenSea</a>
         </div>
 
-        <!-- Plain text handles section at the very bottom -->
         <div class="handles-text">
            @cadecain.eth | farcaster
         </div>
     </div>
+
+    <footer class="footer-flag">
+        <img class="flag-img" src="https://maroon-fast-dolphin-938.mypinata.cloud/ipfs/bafkreied3733oaybxa5honqxgv52az5phlmnbtcfa37xlgc4v6ichpqn7q" alt="Canada Flag">
+    </footer>
 
 </body>
 </html>
