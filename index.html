@@ -33,9 +33,8 @@
             text-align: center;
             max-width: 400px;
             width: 100%;
-            padding: 0 20px 20px 20px;
+            padding: 0 20px 0px 20px; /* Reduced bottom padding */
             box-sizing: border-box;
-            flex-grow: 1; /* Pushes the footer to the bottom if content is short */
         }
 
         /* Profile pic overlap */
@@ -93,7 +92,7 @@
             font-size: 0.85rem;
             line-height: 1.8;
             font-weight: 400;
-            margin-bottom: 20px;
+            margin-bottom: 10px; /* Tightened space below handles text */
         }
 
         /* Footer styling for the flag */
@@ -101,13 +100,13 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            padding-bottom: 30px; /* Space beneath the flag at the edge of the screen */
+            padding-bottom: 40px; /* Kept space at the absolute bottom of the screen */
         }
 
         .flag-img {
-            width: 40px; /* Adjust size if needed */
+            width: 20px; /* Half the original size (was 40px) */
             height: auto;
-            opacity: 0.8; /* Makes it blend a bit smoother with the dark theme */
+            opacity: 0.8;
             transition: opacity 0.2s ease;
         }
 
